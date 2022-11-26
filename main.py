@@ -33,10 +33,10 @@ while True:
     choice = choice.strip()
 
     if choice == "1":
-        subprocess.run(["sudo", "./setup-debian.sh"])
+        subprocess.run(["./setup-debian.sh"])
         break
     elif choice == "2":
-        subprocess.run(["sudo", "./setup-fedora.sh"])
+        subprocess.run(["./setup-fedora.sh"])
         break
     elif choice == "3":
         print("Goodbye!")
