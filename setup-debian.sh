@@ -9,9 +9,9 @@ git
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 
 # configure asdf 
-echo ". $HOME/.asdf/asdf.sh" >> ~/.zshrc
-echo "fpath=(${ASDF_DIR}/completions $fpath)" >> ~/.zshrc
-echo "autoload -Uz compinit && compinit" >> ~/.zshrc
+echo '. $HOME/.asdf/asdf.sh' >> ~/.zshrc
+echo 'fpath=(${ASDF_DIR}/completions $fpath)' >> ~/.zshrc
+echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
 source ~/.zshrc
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
@@ -22,6 +22,6 @@ asdf plugin add python || asdf plugin add nodejs || asdf plugin add terraform ||
 curl -sSL https://install.python-poetry.org | python3 -
 
 # configure poetry
-echo "$HOME/.local/bin" >> ~/.zshrc
+echo '$HOME/.local/bin' >> ~/.zshrc
 source ~/.zshrc
 poetry config virtualenvs.in-project true
