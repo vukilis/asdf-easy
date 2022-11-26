@@ -11,7 +11,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 # configure asdf 
 echo '. $HOME/.asdf/asdf.sh' >> ~/.zshrc
 echo 'fpath=(${ASDF_DIR}/completions $fpath)' >> ~/.zshrc
-echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
+#echo 'autoload -Uz compinit && compinit' >> ~/.zshrc
 source ~/.zshrc
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
