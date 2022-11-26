@@ -25,10 +25,3 @@ curl -sSL https://install.python-poetry.org | python3 -
 echo "$HOME/.local/bin" >> ~/.zshrc
 source ~/.zshrc
 poetry config virtualenvs.in-project true
-
-
-
-
-# fedora 
-sudo dnf group install -y "C Development Tools and Libraries" "Development Tools"
-sudo dnf install -y cmake openssl-devel zlib-devel bzip2-libs readline-devel sqlite-devel wget curl llvm ncurses-devel xz tk-devel libffi-devel xz-devel python3-pyOpenSSL git
