@@ -1,10 +1,8 @@
 #!/bin/bash
 
 # install asdf
-sudo apt install -y make build-essential libssl-dev zlib1g-dev \
-libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
-libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl \
-git
+sudo dnf group install -y "C Development Tools and Libraries" "Development Tools"
+sudo dnf install -y cmake openssl-devel zlib-devel bzip2-libs readline-devel sqlite-devel wget curl llvm ncurses-devel xz tk-devel libffi-devel xz-devel python3-pyOpenSSL git
 
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2
 
