@@ -27,7 +27,8 @@ choice = ""
 while True:
     print("1) Debian/Ubuntu")
     print("2) Fedora")
-    print("3) Quit")
+    print("3) openSUSE")
+    print("4) Quit")
 
     choice = input("Enter Choice: ")
     choice = choice.strip()
@@ -39,6 +40,9 @@ while True:
         subprocess.run(["./setup-fedora.sh"])
         break
     elif choice == "3":
+        subprocess.run(["./setup-openSUSE.sh"])
+        break
+    elif choice == "4":
         print("Goodbye!")
         break
     elif choice == "":
