@@ -19,7 +19,7 @@ python3 main.py
 - Ask what is your system based on
 - Start installation bash script 
 
-### - setup-debian.sh & setup-fedora.sh
+### - setup-[debian/fedora/openSUSE].sh
 - auto install needed dependencies 
 - Install and configure asdf and poetry
 - Changes /proc/sys/fs/inotify/max_user_watches from default to 524288 (for nodejs)
