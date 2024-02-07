@@ -6,9 +6,10 @@ libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
 libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl \
 git
 
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.12.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
 # configure asdf 
+echo '' >> ~/.zshrc
 echo '# asdf #' >> ~/.zshrc
 echo '. $HOME/.asdf/asdf.sh' >> ~/.zshrc
 echo 'fpath=(${ASDF_DIR}/completions $fpath)' >> ~/.zshrc
@@ -25,6 +26,6 @@ asdf global python 3.10.8
 curl -sSL https://install.python-poetry.org | python3 -
 
 # configure poetry
-echo 'export PATH="/home/linuxmint/.local/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 poetry config virtualenvs.in-project true
