@@ -22,6 +22,6 @@ asdf install python latest
 pipx install poetry
 
 # configure poetry
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+# echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 poetry config virtualenvs.in-project true

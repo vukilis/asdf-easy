@@ -26,6 +26,6 @@ asdf global python 3.10.8
 curl -sSL https://install.python-poetry.org | python3 -
 
 # configure poetry
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+# echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 poetry config virtualenvs.in-project true
